@@ -216,6 +216,7 @@ public class ProblemSet2 {
          */
 
         System.out.print(" \n Enter a side length: ");
+
         int sidelength = in.nextInt();
         in.nextLine();
 
@@ -233,6 +234,15 @@ public class ProblemSet2 {
          * Given a string, reverse and print the first and second halves of that string.
          */
 
+        System.out.print(" \n Enter a String: ");
+
+        String string = in.nextLine();
+
+        String firstHalf = string.substring(0, int * Math.floor(string.length()) / 2);
+        
+        String secondHalf = string.substring(int * Math.floor(string.length()) / 2, string.length());
+
+        System.out.println("\n" + secondHalf + firstHalf);
 
 
         /*
