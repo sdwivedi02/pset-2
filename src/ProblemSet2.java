@@ -53,6 +53,31 @@ public class ProblemSet2 {
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
+        System.out.print(" \n Enter a dollar amount: ");
+
+        int dollars = in.nextDouble();
+        dollars = dollars * 100;
+
+        int dollarBills = int * (dollars / 100);
+        dollars = dollars % 100;
+
+        int quarters = int * (dollars / 25);
+        dollars = dollars % 25;
+
+        int dimes = int * (dollars / 10);
+        dollars = dollars % 10;
+
+        int nickels = int * (dollars / 5);
+        dollars = dollars % 5;
+
+        int pennies = int * (dollars / 1);
+        dollars = dollarAmount % 1;
+
+        System.out.println(" \n DOLLARS  : " + dollarBills);
+        System.out.println("QUARTERS : " + quarters);
+        System.out.println("DIMES    : " + dimes);
+        System.out.println("NICKELS  : " + nickels);
+        System.out.println("PENNIES  : " + pennies);
 
 
         /*
@@ -62,7 +87,40 @@ public class ProblemSet2 {
          * bills and coins needed to produce this amount.
          */
 
+        System.out.print(" \n Enter a dollar amount: ");
 
+        double amount = in .nextDouble();
+        amount = amount * 100;
+
+        int hundredBills = int * (amount / 10000);
+        amount = amount % 10000;
+
+        int twentyBills = int * (amount / 2000);
+        amount = amount % 2000;
+
+        int tenBills = int * (amount / 1000);
+        amount = amount % 1000;
+
+        int fiveBills = int * (amount / 500);
+        amount = amount % 500;
+
+        int bills = int * (amount / 100);
+        amount = amount % 100;
+
+        int quarters2 = int * (amount / 25);
+        amount = amount % 25;
+
+        int dimes2 = int * (amount / 10);
+        amount = amount % 10;
+
+        int nickels2 = int * (amount / 5);
+        amount = amount % 5;
+
+        int pennies2 = int * (amount / 1);
+        amount = amount % 1;
+
+        System.out.println(" \n BILLS : " + (hundredBills + twentyBills + tenBills + fiveBills + bills));
+        System.out.println("COINS : " + (quarters2 + dimes2 + nickels2 + pennies2));
 
         /*
          * Exercise 4.
@@ -71,7 +129,23 @@ public class ProblemSet2 {
          * and inches.
          */
 
+        System.out.print(" \n Enter a number of inches: ");
+        int number = in.nextInt();
 
+        int miles = number / 63360;
+        number = number % 63360;
+
+        int yards = number / 36;
+        number = number % 36;
+
+        int feet = number / 12;
+
+        int inches = number % 12;
+
+        System.out.println(" \n MILES  : " + miles);
+        System.out.println("YARDS  : " + yards);
+        System.out.println("FEET   : " + feet);
+        System.out.println("INCHES : " + inches);
 
         /*
          * Exercise 5.
@@ -80,6 +154,21 @@ public class ProblemSet2 {
          * meters, and centimeters.
          */
 
+        System.out.print(" \n Enter a number of centimeters: ");
+
+        int centimeters = in.nextInt();
+
+        int kilometers = centimeters / 100000;
+
+        centimeters = centimeters % 100000;
+
+        int meters = centimeters / 100;
+
+        centimeters = centimeters % 100;
+
+        System.out.println(" \n KILOMETERS  : " + kilometers);
+        System.out.println("METERS      : " + meters);
+        System.out.println("CENTIMETERS : " + centimeters);
 
 
         /*
@@ -87,6 +176,15 @@ public class ProblemSet2 {
          *
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
+
+        System.out.print(" \n Enter a diameter: ");
+        double diameter = in.nextInt();
+
+        double area = Math.pow(diameter / 2, 2) * Math.PI;
+        double circumference = diameter * Math.PI;
+
+        System.out.printf(" \n AREA          : %,.2f", area);
+        System.out.printf(" \n CIRCUMFERENCE : %,.2f\n ", circumference);
 
 
 
