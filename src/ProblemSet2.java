@@ -195,6 +195,18 @@ public class ProblemSet2 {
          * corresponding rectangle.
          */
 
+        System.out.print(" \n Enter a length: ");
+        int length = in.nextInt();
+
+        System.out.print("Enter a width: ");
+        int width = in.nextInt();
+
+        double perimeter = (2 * (double)length) + (2 * (double)width);
+
+        System.out.printf(" \n AREA      : %,.2f ", double * (length * width));
+        System.out.printf(" \n PERIMETER : %,.2f ", perimeter);
+        System.out.printf(" \n DIAGONAL  : %,.2f\n ", Math.hypot(length, width));
+
 
 
         /*
@@ -202,6 +214,16 @@ public class ProblemSet2 {
          *
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
+
+        System.out.print(" \n Enter a side length: ");
+        int sidelength = in.nextInt();
+        in.nextLine();
+
+        double hexArea = ((3 * Math.sqrt(3)) / 2) * Math.pow(sidelength, 2);
+        double hexPerimeter = 6 * sidelength;
+
+        System.out.printf(" \n AREA      : %,.2f\n ", hexArea);
+        System.out.printf("PERIMETER : %,.2f\n ", hexPerimeter);
 
 
 
