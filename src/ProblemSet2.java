@@ -239,7 +239,7 @@ public class ProblemSet2 {
         String string = in.nextLine();
 
         String firstHalf = string.substring(0, int * Math.floor(string.length()) / 2);
-        
+
         String secondHalf = string.substring(int * Math.floor(string.length()) / 2, string.length());
 
         System.out.println("\n" + secondHalf + firstHalf);
@@ -251,8 +251,19 @@ public class ProblemSet2 {
          * Given a first, middle, and last name, print the corresponding initials.
          */
 
+       System.out.print("\n Enter your first name: ");
+       String firstname = in.nextLine();
+
+       System.out.print("Enter your middle name: ");
+       String middlename = in.nextLine();
+
+       System.out.print("Enter last first name: ");
+       String lastname = in.nextLine();
+
+       System.out.println("\n" + firstname.substring(0, 1) + middlename.substring(0, 1) + lastname.substring(0, 1) + "\n");
+
+       in .close();
 
 
-        in.close();
     }
 }
