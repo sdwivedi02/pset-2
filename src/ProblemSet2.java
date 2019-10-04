@@ -58,19 +58,19 @@ public class ProblemSet2 {
         int dollars = in.nextDouble();
         dollars = dollars * 100;
 
-        int dollarBills = int * (dollars / 100);
+        int dollarBills = (int)(dollars / 100);
         dollars = dollars % 100;
 
-        int quarters = int * (dollars / 25);
+        int quarters = (int)(dollars / 25);
         dollars = dollars % 25;
 
-        int dimes = int * (dollars / 10);
+        int dimes = (int)(dollars / 10);
         dollars = dollars % 10;
 
-        int nickels = int * (dollars / 5);
+        int nickels = (int)(dollars / 5);
         dollars = dollars % 5;
 
-        int pennies = int * (dollars / 1);
+        int pennies = (int)(dollars / 1);
         dollars = dollarAmount % 1;
 
         System.out.println(" \n DOLLARS  : " + dollarBills);
@@ -92,31 +92,31 @@ public class ProblemSet2 {
         double amount = in .nextDouble();
         amount = amount * 100;
 
-        int hundredBills = int * (amount / 10000);
+        int hundredBills = (int)(amount / 10000);
         amount = amount % 10000;
 
-        int twentyBills = int * (amount / 2000);
+        int twentyBills = (int)(amount / 2000);
         amount = amount % 2000;
 
-        int tenBills = int * (amount / 1000);
+        int tenBills = (int)(amount / 1000);
         amount = amount % 1000;
 
-        int fiveBills = int * (amount / 500);
+        int fiveBills = (int)(amount / 500);
         amount = amount % 500;
 
-        int bills = int * (amount / 100);
+        int bills = (int)(amount / 100);
         amount = amount % 100;
 
-        int quarters2 = int * (amount / 25);
+        int quarters2 = (int) (amount / 25);
         amount = amount % 25;
 
-        int dimes2 = int * (amount / 10);
+        int dimes2 = (int) (amount / 10);
         amount = amount % 10;
 
-        int nickels2 = int * (amount / 5);
+        int nickels2 = (int) (amount / 5);
         amount = amount % 5;
 
-        int pennies2 = int * (amount / 1);
+        int pennies2 = (int) (amount / 1);
         amount = amount % 1;
 
         System.out.println(" \n BILLS : " + (hundredBills + twentyBills + tenBills + fiveBills + bills));
@@ -203,7 +203,7 @@ public class ProblemSet2 {
 
         double perimeter = (2 * (double)length) + (2 * (double)width);
 
-        System.out.printf(" \n AREA      : %,.2f ", double * (length * width));
+        System.out.printf(" \n AREA      : %,.2f ", (double)(length * width));
         System.out.printf(" \n PERIMETER : %,.2f ", perimeter);
         System.out.printf(" \n DIAGONAL  : %,.2f\n ", Math.hypot(length, width));
 
@@ -238,9 +238,9 @@ public class ProblemSet2 {
 
         String string = in.nextLine();
 
-        String firstHalf = string.substring(0, int * Math.floor(string.length()) / 2);
+        String firstHalf = string.substring(0, (int)Math.floor(string.length()) / 2);
 
-        String secondHalf = string.substring(int * Math.floor(string.length()) / 2, string.length());
+        String secondHalf = string.substring((int)Math.floor(string.length()) / 2, string.length());
 
         System.out.println("\n" + secondHalf + firstHalf);
 
