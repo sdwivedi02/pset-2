@@ -55,7 +55,7 @@ public class ProblemSet2 {
 
         System.out.print(" \n Enter a dollar amount: ");
 
-        int dollars = in.nextDouble();
+        int dollars = in.nextInt();
         dollars = dollars * 100;
 
         int dollarBills = (int)(dollars / 100);
@@ -71,7 +71,7 @@ public class ProblemSet2 {
         dollars = dollars % 5;
 
         int pennies = (int)(dollars / 1);
-        dollars = dollarAmount % 1;
+        dollars = dollars % 1;
 
         System.out.println(" \n DOLLARS  : " + dollarBills);
         System.out.println("QUARTERS : " + quarters);
